@@ -33,6 +33,7 @@ sso_start_url = https://yoursso.awsapps.com/start
 sso_region = eu-west-1
 sso_account_id = 123456654321
 sso_role_name = DevOps
+source_profile = dev-env
 
 [profile prod-env]
 region = eu-west-1
@@ -40,6 +41,7 @@ sso_start_url = https://yoursso.awsapps.com/start
 sso_region = eu-west-1
 sso_account_id = 543210012345
 sso_role_name = DevOps
+source_profile = prod-env
 ```
 
 2. Run the AWS CLI tool *at least once* using one of the profiles you created so that the SSO cache is created.
