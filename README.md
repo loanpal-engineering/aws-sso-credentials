@@ -88,6 +88,7 @@ If you want to avoid having to set a profile, use the `-d` option detailed below
 - `--login` Invokes the AWS CLI to perform a SSO login and refresh SSO credentials.
 - `--docker` Use the Docker version of the AWS CLI
 - `-d, --use-default` Copies the chosen profile and credentials to the default profile. This removes the need to pass a profile name or export the `AWS_PROFILE` environment variable.
+- `-p`, `--use-profile-prefix-in-creds` If given, adds the word `profile` in front of the profile name stored in the `~/.aws/credentials` file.  E.g. it will create `[profile X]` instead of `[X]`.
 
 ## Example
 
